@@ -5,7 +5,7 @@
 It uses deterministic heuristics and semantic cues to segment free-text notes into clinical sections (e.g., *Chief Complaint*, *HPI*, *Medications*, *Allergies*),  
 and outputs a **structured skeleton** with sentence-level citations that can be enriched by an LLM layer or mapped into interoperable FHIR resources.
 
-This module forms the **first stage** of the Latitude Health prior authorization workflow:  
+This module forms the **first stage** of the prior authorization workflow:  
 → *Raw note* → **raw2structured** → *structured JSON* → **priorauth-checker** → *eligibility decision*
 
 ---
@@ -132,3 +132,4 @@ mcp-raw2structured/
 
 ## 🔗 Related Repositories
 - [mcp-priorauth-checker](https://github.com/Satya-Bharadwaj/mcp-priorauth-checker)
+
