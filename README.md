@@ -1,11 +1,11 @@
 # 🧠 MCP Tool: raw2structured
 
 ### Overview
-`raw2structured` is a **Python-based Model Context Protocol (MCP)** server that transforms **unstructured clinical notes** into a structured, FHIR-like representation.  
+`raw2structured` is a **Python-based Model Context Protocol (MCP)** server that transforms **unstructured clinical notes** into a structured, and FHIR-like representation.  
 It uses deterministic heuristics and semantic cues to segment free-text notes into clinical sections (e.g., *Chief Complaint*, *HPI*, *Medications*, *Allergies*),  
 and outputs a **structured skeleton** with sentence-level citations that can be enriched by an LLM layer or mapped into interoperable FHIR resources.
 
-This module forms the **first stage** of the prior authorization workflow:  
+This module forms the **first stage** of the assessment's prior authorization workflow:  
 → *Raw note* → **raw2structured** → *structured JSON* → **priorauth-checker** → *eligibility decision*
 
 ---
